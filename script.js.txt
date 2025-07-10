@@ -1,0 +1,16 @@
+// Весь JavaScript из тега <script>
+function openExternal(url) {
+    window.open(url, '_blank', 'noopener,noreferrer');
+}
+
+document.querySelectorAll('.help-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        if(typeof gtag !== 'undefined') {
+            gtag('event', 'click', {
+                'event_category': 'Help Program',
+                'event_label': 'UN Help Program Click'
+            });
+        }
+        console.log('Користувач перейшов на сторінку допомоги ООН');
+    });
+});

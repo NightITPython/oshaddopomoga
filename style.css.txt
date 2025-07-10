@@ -1,0 +1,30 @@
+/* Все стили из тега <style> */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0057b7;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+/* ... и все остальные стили вплоть до @media-запросов ... */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    main {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .categories {
+        column-count: 2;
+    }
+}

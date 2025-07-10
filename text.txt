@@ -1,0 +1,7 @@
+oshaddopomoga/
+├── index.html          # Главная страница (переименованный inbex.html)
+├── css/
+│   └── style.css       # Все стили
+├── js/
+│   └── script.js       # Все скрипты
+└── README.md           # Описание проекта
